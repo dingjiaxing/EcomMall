@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 常用颜色 -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <!--全局用色 -->
+    <color name="gray_ff">#ffffff</color>
+    <color name="gray_f2">#f2f2f2</color>
+    <color name="gray_f1f2">#f1f2ed</color>
+    <color name="gray_97">#979797</color>
+    <color name="gray_33">#333333</color>
+    <color name="gray_55">#555555</color>
+    <color name="gray_88">#888</color>
+    <color name="gray_f1">#f1f1f1</color>
+
+    <color name="gray_f5">#f5f5f5</color>
+
+    <color name="gray_a5">#a5a5a5</color>
+    <color name="gray_aa">#aaaaaa</color>
+    <color name="gray_ad">#adadad</color>
+    <color name="gray_af">#afafaf</color>
+
+    <color name="gray_b1">#b1b1b1</color>
+    <color name="gray_ec">#ececec</color>
+
+
+
+
+    <color name="gray_02">#020202</color>
+
+    <color name="gray_dd">#FFDDDDDD</color>
+    <color name="gray_e5">#e5e5e5</color>
+    <color name="gray_e6">#FFe6e6e6</color>
+    <color name="gray_e7">#e7e7e7</color>
+    <color name="gray_eb">#FFebebeb</color>
+    <color name="gray_ee">#FFeeeeee</color>
+    <color name="gray_f8">#f8f8f8</color>
+
+
+    <color name="gray_40">#404040</color>
+    <color name="gray_4d">#4d4d4d</color>
+    <color name="gray_5e">#5e5e5e</color>
+    <color name="gray_99">#999999</color>
+    <color name="gray_9c">#9c9c9c</color>
+    <color name="gray_66">#666666</color>
+    <color name="gray_1a">#1a1a1a</color>
+
+    <color name="gray_b3">#b3b3b3</color>
+    <color name="gray_bb">#bbbbbb</color>
+    <color name="gray_be">#bebebe</color>
+    <color name="gray_7c">#b3b3b3</color>
+    <color name="gray_7f">#7f7f7f</color>
+    <color name="gray_e8">#e8e8e8</color>
+    <color name="gray_f0">#f0f0f0</color>
+    <color name="gray_80">#808080</color>
+
+    <color name="gray_f6">#f6f6f6</color>
+    <color name="gray_fa">#fafafa</color>
+
+    <color name="gray_36">#363636</color>
+    <color name="gray_cc">#cccccc</color>
+    <color name="gray_d3">#d3d3d3</color>
+    <color name="gray_d6">#d6d6d6</color>
+</resources>

@@ -1,0 +1,23 @@
+
+ext {
+    buildToolsVersion = "28.0.0"
+    compileSdkVersion = 28
+    minSdkVersion = 14
+    targetSdkVersion = 28
+
+    versionCode = 1
+    versionName = "1.0"
+
+    javaVersion = JavaVersion.VERSION_1_8
+
+    artifactoryUrl = 'http://localhost:8081/artifactory/android_local_2'
+    artifactoryUser = 'admin'
+    artifactoryPass = 'password'
+
+    androidXVersion = "1.0.2"
+    // https://github.com/JakeWharton/butterknife
+    butterknifeVersion="10.1.0"
+    daggerVersion = '2.19'
+
+
+}
