@@ -42,6 +42,20 @@ android {
         abortOnError false
     }
 
+    sourceSets{
+        main{
+            if(isModule.toBoolean()){
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
+                java{
+                    //全部module一起编译的时候剔除debug目录
+                    exclude '**/**/debug/**'
+                }
+            }
+        }
+    }
+
 }
 
 dependencies {

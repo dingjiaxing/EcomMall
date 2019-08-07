@@ -50,4 +50,10 @@ dependencies {
 //    annotationProcessor "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
 
 //    api "androidx.constraintlayout:constraintlayout:$rootProject.androidXVersion"
+
+    // 配置数据存储 https://github.com/Tencent/MMKV
+    implementation 'com.tencent:mmkv:1.0.22'
+    //https://github.com/alibaba/fastjson
+    compile "com.alibaba:fastjson:$rootProject.fastjsonVersion"
+    compile "com.alibaba:fastjson:$rootProject.fastjsonVersionAndroid"
 }

@@ -36,6 +36,19 @@ android {
     //但是resourcePrefix这个值只能限定xml里面的资源，并不能限定图片资源，所有图片资源仍然需要手动去修改资源名。
     resourcePrefix "im_"
 
+    sourceSets{
+        main{
+            if(isModule.toBoolean()){
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
+                java{
+                    //全部module一起编译的时候剔除debug目录
+                    exclude '**/**/debug/**'
+                }
+            }
+        }
+    }
 }
 
 dependencies {
