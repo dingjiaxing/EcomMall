@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.jackting.common.base.IApplication;
 import com.jackting.common.config.ModuleConfig;
+import com.jackting.common.data.config.ConfigDataEngine;
 import com.jackting.common.di.component.AppComponent;
 import com.jackting.common.di.component.DaggerAppComponent;
 import com.jackting.common.di.module.AppModule;
@@ -45,6 +46,8 @@ public class CommonApplication extends Application {
         sApplication = this;
         initInjector();
         modulesApplicationInit();
+        //初始化配置数据引擎
+        ConfigDataEngine.init(this);
     }
 
     private void modulesApplicationInit(){
