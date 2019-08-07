@@ -9,6 +9,12 @@ android {
         versionCode rootProject.versionCode
         versionName rootProject.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
     }
     buildTypes {
         release {
@@ -20,6 +26,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
 }
 
 dependencies {
@@ -40,5 +47,6 @@ dependencies {
     implementation project(path: ':lib_router')
     implementation project(path: ':lib_res')
     implementation project(path: ':module_main')
+
 //    implementation project(path:":common")
 }

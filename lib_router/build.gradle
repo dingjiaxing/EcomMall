@@ -12,6 +12,12 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ AROUTER_MODULE_NAME : project.getName() ]
+            }
+        }
+
     }
 
     buildTypes {
@@ -33,4 +39,8 @@ dependencies {
 
     api project(":common")
 
+    //router https://github.com/alibaba/ARouter/
+    api ("com.alibaba:arouter-api:$rootProject.arouterApiVersion")
+    { exclude module: 'support-v4' }
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.arouterCompilerVersion"
 }

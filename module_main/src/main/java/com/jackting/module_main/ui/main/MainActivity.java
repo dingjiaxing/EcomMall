@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
@@ -69,29 +70,11 @@ public class MainActivity extends BaseActivity<MainPresenter> {
                 return true;
             }
         });
-//        bottomBar
-//                .addItem(new BottomNavigationItem(R.drawable.selector_main_home,getString(R.string.tab_home)))
-//                .addItem(new BottomNavigationItem(R.drawable.selector_main_user,getString(R.string.tab_profile)))
-//                .setFirstSelectedPosition(0)
-//                .initialise();
-//
-//        bottomBar.setTabSelectedListener(new BottomNavigationBar.OnTabSelectedListener() {
-//            @Override
-//            public void onTabSelected(int position) {
-//                selectFragment(position);
-//            }
-//
-//            @Override
-//            public void onTabUnselected(int position) {
-//                hideFragment(position);
-//            }
-//            @Override
-//            public void onTabReselected(int position) {
-//            }
-//        });
     }
 
     void initFragment() {
+//        profileFragment = ServiceManager.getInstance().getUserProvider().newInstance(IUserProvider.USER_PROFILE_FRAGMENT,null);
+
         ft = getSupportFragmentManager().beginTransaction();
         ft.add(R.id.main_container, profileFragment);
         ft.hide(profileFragment);

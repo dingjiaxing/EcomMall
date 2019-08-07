@@ -12,7 +12,11 @@ android {
         versionName config.versionName
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
     }
 
     buildTypes {
@@ -44,4 +48,6 @@ dependencies {
 //    api "com.google.dagger:dagger-android-support:$rootProject.daggerVersion"
     annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
 //    annotationProcessor "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
+
+//    api "androidx.constraintlayout:constraintlayout:$rootProject.androidXVersion"
 }

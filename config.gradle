@@ -19,5 +19,10 @@ ext {
     butterknifeVersion="10.1.0"
     daggerVersion = '2.19'
 
+    //router https://github.com/alibaba/ARouter/
+//    arouterApiVersion="1.5.0"
+    arouterApiVersion="1.4.1"
+    arouterCompilerVersion="1.2.2"
+
 
 }

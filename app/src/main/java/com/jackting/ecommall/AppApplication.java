@@ -17,6 +17,7 @@ public class AppApplication extends CommonApplication  {
 
     @Override
     public void onCreate() {
+        setIsDebug(BuildConfig.DEBUG);
         super.onCreate();
 //        initDagger();
 //        new CommonApplication().onCreate(this);

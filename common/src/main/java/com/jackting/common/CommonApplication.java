@@ -4,15 +4,15 @@ import android.app.Application;
 import android.content.Context;
 
 import com.jackting.common.base.IApplication;
+import com.jackting.common.config.ModuleConfig;
 import com.jackting.common.di.component.AppComponent;
 import com.jackting.common.di.component.DaggerAppComponent;
-import com.jackting.common.di.config.ModuleConfig;
 import com.jackting.common.di.module.AppModule;
 
 public class CommonApplication extends Application {
 
     protected static Application sApplication;
-    protected static boolean sIsDebug;
+    protected static boolean sIsDebug=true;
     private static AppComponent appComponent;
 
 
@@ -21,11 +21,11 @@ public class CommonApplication extends Application {
         return sApplication;
     }
 
-    public static boolean issIsDebug() {
+    public static boolean isDebug() {
         return sIsDebug;
     }
 
-    public static void setsIsDebug(boolean sIsDebug) {
+    public static void setIsDebug(boolean sIsDebug) {
         CommonApplication.sIsDebug = sIsDebug;
     }
 

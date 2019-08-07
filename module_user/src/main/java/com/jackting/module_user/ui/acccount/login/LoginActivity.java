@@ -15,6 +15,8 @@ import com.jackting.module_user.R;
 import com.jackting.module_user.R2;
 import com.jackting.module_user.di.component.DaggerUserComponent;
 
+import org.xml.sax.helpers.ParserAdapter;
+
 import javax.inject.Inject;
 
 import butterknife.BindView;
