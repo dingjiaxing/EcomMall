@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 返回区域大小 -->
+    <dimen name="res_res_title_left_size">100dp</dimen>
+
+    <!--顶部导航栏-->
+    <dimen name="res_title_bar_text">17dp</dimen>
+    <!-- 标题文字大小-->
+    <dimen name="res_title_text">15dp</dimen>
+    <!-- 主要文字大小-->
+    <dimen name="res_text">14dp</dimen>
+    <!-- 辅助文字大小-->
+    <dimen name="res_text_assist">12dp</dimen>
+    <!-- 次要文字大小-->
+    <dimen name="res_text_secondary">10dp</dimen>
+    <!-- 提示文字大小-->
+    <dimen name="res_text_hint">14dp</dimen>
+
+    <!-- 图标大小 -->
+    <dimen name="res_icon">43dp</dimen>
+
+    <dimen name="res_title_bar_height">44dp</dimen>
+
+    <!-- 支付部分配置 -->
+    <dimen name="res_LargeTextSize">16dp</dimen>
+    <dimen name="res_BasicTextSize">15dp</dimen>
+    <dimen name="res_TitleTextSize">18dp</dimen>
+    <dimen name="res_SmallTextSize">14dp</dimen>
+    <dimen name="res_SmallerTextSize">13dp</dimen>
+    <dimen name="res_LargestTextSize">30dp</dimen>
+    <dimen name="res_ChattingTextSize">16dp</dimen>
+    <dimen name="res_ChattingContentMinHeight">49dp</dimen>
+    <dimen name="res_PreferenceItemHeight">42dp</dimen>
+    <dimen name="res_ConversationItemHeight">58dp</dimen>
+    <dimen name="res_LargeAvatarSize">56dp</dimen>
+    <!-- 返回区域大小 -->
+    <dimen name="res_title_left_size">100dp</dimen>
+</resources>

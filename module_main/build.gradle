@@ -50,6 +50,9 @@ android {
             }
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -62,12 +65,12 @@ dependencies {
 //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     api project(":common")
-//    api project(":lib_router")
-
+    api project(":lib_router")
+    api project(":lib_res")
 
     annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
-    // https://github.com/Ashok-Varma/BottomNavigation
-//    compile 'com.ashokvarma.android:bottom-navigation-bar:2.1.0'
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterknifeVersion"
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.arouterCompilerVersion"
 
     implementation "com.google.android.material:material:1.0.0"
 

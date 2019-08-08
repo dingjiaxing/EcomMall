@@ -6,10 +6,11 @@ import android.content.Context;
 import com.alibaba.android.arouter.facade.Postcard;
 import com.alibaba.android.arouter.facade.callback.NavigationCallback;
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.jackting.common.CommonApplication;
 import com.jackting.lib_router.config.ModuleBundle;
 
 /**
- * Created by wxmylife on 2017/4/21.
+ * Created by djx on 2017/4/21.
  */
 
 public class ModuleRouter {

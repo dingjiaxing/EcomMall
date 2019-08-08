@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">module_main</string>
+    <string name="main_app_name">module_main</string>
 
 
 
-    <string name="tab_home">首页</string>
-    <string name="tab_profile">我的</string>
+    <string name="main_tab_home">首页</string>
+    <string name="main_tab_category">分类</string>
+    <string name="main_tab_community">社区</string>
+    <string name="main_tab_cart">购物车</string>
+    <string name="main_tab_profile">我的</string>
 
 </resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="44dp"
+android:background="@color/white">
+<LinearLayout
+    android:id="@+id/ll_base_title_left"
+    android:clickable="true"
+    android:layout_alignParentLeft="true"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_width="@dimen/res_title_left_size"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
+        android:src="@drawable/res_icon_back_black_left_arrow" />
+
+</LinearLayout>
+
+
+<TextView
+    android:id="@+id/tv_base_title"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:text="登录"
+    android:textColor="@color/gray_33"
+    android:textSize="17dp" />
+
+<TextView
+    android:id="@+id/tv_base_right"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="15dp"
+    android:gravity="center"
+    android:text="注册新用户"
+    android:textColor="@color/gray_33"
+    android:textSize="14dp" />
+
+
+</RelativeLayout>
+

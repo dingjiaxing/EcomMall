@@ -17,15 +17,15 @@ ext {
     androidXVersion = "1.0.2"
     // https://github.com/JakeWharton/butterknife
     butterknifeVersion="10.1.0"
-    daggerVersion = '2.19'
+    daggerVersion = '2.9'
 
     //router https://github.com/alibaba/ARouter/
 //    arouterApiVersion="1.5.0"
     arouterApiVersion="1.4.1"
     arouterCompilerVersion="1.2.2"
     //https://github.com/alibaba/fastjson
-    fastjsonVersion="1.2.31"
-    fastjsonVersionAndroid="1.1.57.android"
+    fastjsonVersion="1.2.59"
+    fastjsonVersionAndroid="1.1.71.android"
 
 
 }

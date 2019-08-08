@@ -41,6 +41,6 @@ dependencies {
 
     //router https://github.com/alibaba/ARouter/
     api ("com.alibaba:arouter-api:$rootProject.arouterApiVersion")
-    { exclude module: 'support-v4' }
+//    { exclude module: 'support-v4' }
     annotationProcessor "com.alibaba:arouter-compiler:$rootProject.arouterCompilerVersion"
 }

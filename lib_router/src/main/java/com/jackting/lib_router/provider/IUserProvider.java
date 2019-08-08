@@ -5,9 +5,9 @@ import com.jackting.lib_router.provider.base.IFragmentProvider;
 public interface IUserProvider extends IFragmentProvider {
 
     //服务
-    String USER_MAIN_SERVICE = "/user/service";
+    String USER_MAIN_SERVICE = "/user/main/service";
     //作为Fragment被添加时候的key
-    String USER_PROFILE_FRAGMENT = "user_profile_fragment";
+    String USER_PROFILE_FRAGMENT = "/user/profile_fragment";
 
     //loginActivity页面
     String USER_PROFILE_LOGIN_ACTIVITY = "/user/profile/login";
@@ -16,4 +16,5 @@ public interface IUserProvider extends IFragmentProvider {
     String USER_SETTING_ACTIVITY="/user/setting/activity";
 
 
+    void startLoginActivity();
 }

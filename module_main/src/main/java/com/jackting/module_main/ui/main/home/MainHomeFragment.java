@@ -1,19 +1,12 @@
 package com.jackting.module_main.ui.main.home;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 
 import com.jackting.common.base.BaseFragment;
 import com.jackting.module_main.R;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.inject.Inject;
-
-import butterknife.BindView;
 
 public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements MainHomeContract.View {
 
@@ -30,7 +23,7 @@ public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements
 
     @Override
     public int getContentViewResId() {
-        return R.layout.fragment_main_home;
+        return R.layout.main_fragment_main_home;
     }
 
     @Override

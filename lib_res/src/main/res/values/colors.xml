@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主题用颜色 -->
+    <color name="res_colorPrimary">#e11437</color>
+    <color name="res_colorPrimaryDark">#e11437</color>
+    <color name="res_windowBackground">#f5f5f5</color>
+    <color name="res_colorAccent">#ff6660</color>
+    <color name="res_colorTextColor">#333333</color>
+    <color name="res_colorTextHintColor">#b1b1b1</color>
+
+    <!--  整体主题颜色 -->
+    <color name="res_text">#333333</color>
+    <color name="res_text_hint">#b1b1b1</color>
+
+    <!-- 常用颜色 -->
+    <color name="res_white">#ffffff</color>
+    <color name="res_black">#000000</color>
+
+    <!--全局用色 -->
+    <color name="res_gray_ff">#ffffff</color>
+    <color name="res_gray_f2">#f2f2f2</color>
+    <color name="res_gray_f1f2">#f1f2ed</color>
+    <color name="res_gray_97">#979797</color>
+    <color name="res_gray_33">#333333</color>
+    <color name="res_gray_55">#555555</color>
+    <color name="res_gray_f1">#f1f1f1</color>
+
+    <color name="res_gray_f5">#f5f5f5</color>
+
+    <color name="res_gray_aa">#aaaaaa</color>
+
+    <color name="res_gray_b1">#b1b1b1</color>
+    <color name="res_gray_ec">#ececec</color>
+
+
+
+
+    <color name="res_gray_02">#020202</color>
+
+    <color name="res_gray_dd">#FFDDDDDD</color>
+    <color name="res_gray_e6">#FFe6e6e6</color>
+    <color name="res_gray_eb">#FFebebeb</color>
+    <color name="res_gray_ee">#FFeeeeee</color>
+    <color name="res_gray_f8">#f8f8f8</color>
+
+
+    <color name="res_gray_40">#404040</color>
+    <color name="res_gray_4d">#4d4d4d</color>
+    <color name="res_gray_5e">#5e5e5e</color>
+    <color name="res_gray_99">#999999</color>
+    <color name="res_gray_9c">#9c9c9c</color>
+    <color name="res_gray_66">#666666</color>
+    <color name="res_gray_1a">#1a1a1a</color>
+
+    <color name="res_gray_b3">#b3b3b3</color>
+    <color name="res_gray_be">#bebebe</color>
+    <color name="res_gray_7c">#b3b3b3</color>
+    <color name="res_gray_7f">#7f7f7f</color>
+    <color name="res_gray_e8">#e8e8e8</color>
+    <color name="res_gray_f0">#f0f0f0</color>
+    <color name="res_gray_80">#808080</color>
+
+    <color name="res_gray_f6">#f6f6f6</color>
+    <color name="res_gray_fa">#fafafa</color>
+
+    <color name="res_gray_36">#363636</color>
+    <color name="res_gray_cc">#cccccc</color>
+    <color name="res_gray_d3">#d3d3d3</color>
+    <color name="res_white_trans_aa">#AAFFFFFF</color>
+    <color name="res_common_bg">#fafafa</color>
+    <color name="res_common_light_gray">#cccccc</color>
+    <color name="res_common_gray">#999999</color>
+    <color name="res_black_4d">#4D4D4D</color>
+    <color name="res_black_1a">#1A1A1A</color>
+
+    <!-- 主色调红色 -->
+    <color name="res_red">#e11437</color>
+    <color name="res_red_d6">#d6191d</color>
+    <color name="res_common_red">#d6191d</color>
+    <color name="res_pink">#ff5d72</color>
+    <color name="res_red_indi">#E50619</color>
+    <color name="res_blue_indi">#066AE5</color>
+    <color name="res_yellow">#fff100</color>
+    <!-- 分割线 -->
+    <color name="res_line">#ececec</color>
+
+    <!-- 橘红色，购物按钮背景，提示性文字，相机、收藏 图标用色 -->
+    <color name="res_orange">#ff6660</color>
+    <color name="res_goods_category_search_title_bg">#edeeee</color>
+    <color name="res_goods_category_search_title_text">#e6d9d9d9</color>
+    <color name="res_goods_category_left_item_red">#e11437</color>
+    <color name="res_goods_category_left_item_default">#333333</color>
+    <color name="res_goods_category_left_item_bg_unselected">#ffffff</color>
+    <color name="res_goods_category_left_item_bg_selected">#f5f5f5</color>
+    <color name="res_good_detail_tab_gray">#E6999999</color>
+    <color name="res_good_detail_tab_orange">#d6191d</color>
+
+    <!-- 支付部分配置 -->
+    <color name="res_blue">#ffccddff</color>
+    <color name="res_grey">#58616d</color>
+    <color name="res_darkgrey">#ff404040</color>
+    <color name="res_toasterro">#9fd524</color>
+    <color name="res_lightgrey">#ff888888</color>
+    <color name="res_semitransparent">#80000000</color>
+    <color name="res_lightransparent">#a0000000</color>
+    <color name="res_transparent">#00000000</color>
+    <color name="res_navpage">#FFE1E8EB</color>
+    <!-- 支付部分配置end -->
+
+    <!-- 二维码扫描部分-->
+    <color name="res_viewfinder_laser">#E40619</color>
+    <!-- 二维码扫描时背景的透明度和颜色 -->
+    <color name="res_viewfinder_mask">#66000000</color>
+    <color name="res_viewfinder_frame">#ff23b7ad</color>
+    <color name="res_backgroud">#ffffffff</color>
+    <color name="res_title_tv_color">#ffffffff</color>
+    <color name="res_wallet_color_wh">#24b7ad</color>
+    <color name="res_wallet_color_red">#fc323c</color>
+    <color name="res_f1">#f1f1f1</color>
+    <color name="res_gray_line">#fafafa</color>
+    <color name="res_green">#23b7ad</color>
+    <color name="res_black6">#666666</color>
+    <color name="res_possible_result_points">#c0ffbd21</color>
+    <color name="res_result_text">#ff000000</color>
+    <!-- 二维码-->
+
+    <!--首页红色-->
+    <color name="res_red_home_f11">#F1164E</color>
+    <color name="res_red_home_eee">#EEECEE</color>
+    <color name="res_red_home_ff2">#FF2731</color>
+    <color name="res_pink_fef">#FEF4F4</color>
+    <color name="res_gray_f0f2f5">#F0F2F5</color>
+
+    <color name="res_gray_88">#888888</color>
+    <color name="res_red_f66165">#f66165</color>
+    <color name="res_green_279e3b">#379e3b</color>
+    <color name="res_code">#d6191d</color>
+    <color name="res_red_d6191d">#d6191d</color>
+    <color name="res_red_F02B2B">#F02B2B</color>
+    <color name="res_red_F11641">#F11641</color>
+
+
+</resources>

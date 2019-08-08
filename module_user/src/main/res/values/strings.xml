@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">module_user</string>
+    <string name="user_app_name">module_user</string>
 
     <!--登录页-->
-    <string name="username_input_hint">请输入用户名 166123456</string>
-    <string name="password_input_hint">请输入登录密码 123456</string>
-    <string name="remember_password">  记住用户名</string>
-    <string name="login">登 录</string>
-    <string name="app_version">当前版本：</string>
-    <string name="username_cannot_be_empty">用户名不能为空</string>
-    <string name="password_cannot_be_empty">密码不能为空</string>
+    <string name="user_username_input_hint">请输入用户名 166123456</string>
+    <string name="user_password_input_hint">请输入登录密码 123456</string>
+    <string name="user_remember_password">  记住用户名</string>
+    <string name="user_login">登 录</string>
+    <string name="user_app_version">当前版本：</string>
+    <string name="user_username_cannot_be_empty">用户名不能为空</string>
+    <string name="user_password_cannot_be_empty">密码不能为空</string>
 
 </resources>

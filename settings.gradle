@@ -1,1 +1,1 @@
-include ':app', ':common', ':lib_push', ':lib_webview', ':lib_res', ':lib_router', ':module_main', ':module_goods', ':module_user', ':module_order', ':module_im'
+include ':app', ':common', ':lib_push', ':lib_webview', ':lib_res', ':lib_router', ':module_main', ':module_goods', ':module_user', ':module_order', ':module_msg', ':lib_http', ':module_community'

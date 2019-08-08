@@ -1,24 +1,27 @@
 package com.jackting.lib_router;
 
 import android.app.Application;
+import android.util.Log;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.jackting.common.CommonApplication;
 import com.jackting.common.base.IApplication;
 import com.jackting.lib_router.config.ModuleOptions;
 import com.jackting.lib_router.provider.IGoodsProvider;
-import com.jackting.lib_router.provider.IImProvider;
 import com.jackting.lib_router.provider.IMainProvider;
+import com.jackting.lib_router.provider.IMsgProvider;
 import com.jackting.lib_router.provider.IOrderProvider;
 import com.jackting.lib_router.provider.IUserProvider;
 import com.jackting.lib_router.router.ModuleManager;
 
 public class RouteApplication implements IApplication {
 
+    private static final String TAG = "RouteApplication";
     Application sApp;
 
     @Override
     public void onCreate(Application application) {
+        Log.d(TAG,"RouteApplication onCreate");
         sApp = application;
         initRouter();
     }
@@ -33,10 +36,10 @@ public class RouteApplication implements IApplication {
 
         ModuleOptions.ModuleBuilder builder = new ModuleOptions.ModuleBuilder(sApp)
 
-//                .addModule(IMainProvider.MAIN_MAIN_SERVICE, IMainProvider.MAIN_MAIN_SERVICE)
-//                .addModule(IImProvider.IM_MAIN_SERVICE, IImProvider.IM_MAIN_SERVICE)
-//                .addModule(IGoodsProvider.GOODS_MAIN_SERVICE, IGoodsProvider.GOODS_MAIN_SERVICE)
-//                .addModule(IOrderProvider.ORDER_MAIN_SERVICE, IOrderProvider.ORDER_MAIN_SERVICE)
+                .addModule(IMainProvider.MAIN_MAIN_SERVICE, IMainProvider.MAIN_MAIN_SERVICE)
+                .addModule(IMsgProvider.MSG_MAIN_SERVICE, IMsgProvider.MSG_MAIN_SERVICE)
+                .addModule(IGoodsProvider.GOODS_MAIN_SERVICE, IGoodsProvider.GOODS_MAIN_SERVICE)
+                .addModule(IOrderProvider.ORDER_MAIN_SERVICE, IOrderProvider.ORDER_MAIN_SERVICE)
                 .addModule(IUserProvider.USER_MAIN_SERVICE, IUserProvider.USER_MAIN_SERVICE);
 
         ModuleManager.getInstance().init(builder.build());

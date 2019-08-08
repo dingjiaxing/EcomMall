@@ -7,4 +7,5 @@ import android.os.Build;
 public interface IApplication {
 
     void onCreate(Application application);
+
 }

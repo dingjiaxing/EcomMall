@@ -26,6 +26,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    lintOptions {
+        abortOnError false
+    }
 
 }
 
@@ -38,15 +41,20 @@ dependencies {
 //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
 
-    implementation project(":module_user")
+    implementation project(path: ':common')
+
+    implementation project(path: ':lib_router')
+    implementation project(path: ':lib_webview')
+    implementation project(path: ':lib_res')
     implementation project(path: ':lib_push')
+    implementation project(path: ':lib_http')
+
     implementation project(path: ':module_order')
     implementation project(path: ':module_goods')
-    implementation project(path: ':module_im')
-    implementation project(path: ':lib_webview')
-    implementation project(path: ':lib_router')
-    implementation project(path: ':lib_res')
+    implementation project(path: ':module_msg')
     implementation project(path: ':module_main')
+    implementation project(path: ":module_user")
+    implementation project(path: ":module_community")
 
 //    implementation project(path:":common")
 }
