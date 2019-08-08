@@ -10,20 +10,20 @@
 * 开源库
 * 自己的基础组件
 2. 业务组件(lib)：业务相关组件
-* lib_http:
-* lib_push:
-* lib_share:
-* lib_webview:
-* lib_res:
-* lib_im:
+* lib_http: 网络库
+* lib_push: 推送组件
+* lib_res: 共用资源组件
+* lib_share: 分享组件
+* lib_webview: webview组件
 3. 路由组件(router)
 * arouter:
 4. 业务模块(module)
-* module_main:
-* module_goods:
-* module_order:
-* module_user:
-* module_im:
+* module_main: 首页模块，主要包括启动页、欢迎页、主页壳
+* module_goods:商品模块
+* module_order:订单模块
+* module_user: 用户模块
+* module_msg: 消息模块
+* module_community: 社区模块
 5. APP壳(shell)
 * app_shell: app壳层，基于应用安全考虑，通过调用C层的加密方法将业务模块加密
 
