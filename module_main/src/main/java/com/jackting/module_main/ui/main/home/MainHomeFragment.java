@@ -1,12 +1,33 @@
 package com.jackting.module_main.ui.main.home;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
 import com.jackting.common.base.BaseFragment;
+import com.jackting.common.data.img.ImgLoadEngine;
 import com.jackting.module_main.R;
+import com.jackting.module_main.R2;
+import com.scwang.smartrefresh.layout.SmartRefreshLayout;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
+import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
+import com.youth.banner.Banner;
+import com.youth.banner.BannerConfig;
+import com.youth.banner.Transformer;
+import com.youth.banner.loader.ImageLoader;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.inject.Inject;
+
+import butterknife.BindView;
 
 public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements MainHomeContract.View {
 
@@ -15,6 +36,15 @@ public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements
 
 //    HomeArticleAdapter adapter;
 //    List<Article> articleList=new ArrayList<>();
+    @BindView(R2.id.banner)
+    Banner banner;
+    @BindView(R2.id.refreshLayout)
+    SmartRefreshLayout refreshLayout;
+    @BindView(R2.id.recyclerView)
+    RecyclerView recyclerView;
+
+    List<Object> bannerImgList = new ArrayList<>();
+    List<String> bannerTitleList = new ArrayList<>();
 
     @Inject
     public MainHomeFragment() {
@@ -28,9 +58,77 @@ public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements
 
     @Override
     public void init(Bundle savedInstanceState) {
-
+        initTestData();
+        initBanner();
+        initRefreshLoadMore();
     }
 
+    void initBanner(){
+        banner.setImageLoader(new ImageLoader() {
+            @Override
+            public void displayImage(Context context, Object path, ImageView imageView) {
+                ImgLoadEngine.with(context).load(path).into(imageView);
+//                Glide.with(context).load(path).into(imageView);
+            }
+        });
+        banner.setImages(bannerImgList);
+
+        //设置banner样式
+        banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR);
+        //设置banner动画效果
+        banner.setBannerAnimation(Transformer.Default);
+        //设置标题集合（当banner样式有显示title时）
+//        banner.setBannerTitles(bannerTitleList);
+        //设置自动轮播，默认为true
+        banner.isAutoPlay(true);
+        //设置轮播时间
+        banner.setDelayTime(3000);
+        //设置指示器位置（当banner模式中有指示器时）
+        banner.setIndicatorGravity(BannerConfig.CENTER);
+
+        banner.start();
+    }
+
+    void initTestData(){
+//        bannerImgList.add("https://github.com/dingjiaxing/EcomMall/blob/master/doc/img/banner/main_test_banner_1.jpg");
+//        bannerImgList.add("https://github.com/dingjiaxing/EcomMall/blob/master/doc/img/banner/main_test_banner_2.jpg");
+//        bannerImgList.add("https://github.com/dingjiaxing/EcomMall/blob/master/doc/img/banner/main_test_banner_3.jpg");
+        bannerImgList.add(R.drawable.main_test_banner_1);
+        bannerImgList.add(R.drawable.main_test_banner_2);
+        bannerImgList.add(R.drawable.main_test_banner_3);
+        bannerImgList.add(R.drawable.main_test_banner_3);
+        bannerImgList.add(R.drawable.main_test_banner_3);
+
+        bannerTitleList.add("年终大促");
+        bannerTitleList.add("积分兑换");
+        bannerTitleList.add("日韩爆款");
+    }
+
+    void initRefreshLoadMore(){
+        refreshLayout.setOnRefreshLoadMoreListener(new OnRefreshLoadMoreListener() {
+            @Override
+            public void onLoadMore(@NonNull RefreshLayout refreshLayout) {
+                refreshLayout.finishRefresh(2000/*,false*/);//传入false表示刷新失败
+            }
+
+            @Override
+            public void onRefresh(@NonNull RefreshLayout refreshLayout) {
+                refreshLayout.finishLoadMore(2000/*,false*/);//传入false表示加载失败
+            }
+        });
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        banner.startAutoPlay();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        banner.stopAutoPlay();
+    }
 
     void initRv(){
 //        adapter=new HomeArticleAdapter(articleList);

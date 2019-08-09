@@ -15,6 +15,9 @@ android {
                 arguments = [AROUTER_MODULE_NAME: project.getName()]
             }
         }
+        // Enabling multidex support.
+        multiDexEnabled true       //You have already did this
+
     }
     buildTypes {
         release {
