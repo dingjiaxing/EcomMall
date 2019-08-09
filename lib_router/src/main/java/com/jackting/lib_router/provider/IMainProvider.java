@@ -7,4 +7,6 @@ public interface IMainProvider extends IFragmentProvider {
 
     String MAIN_ACTIVITY = "/main0/main/main_activity";
 
+    String SCAN_ACTIVITY = "/main0/activity/scan";
+
 }

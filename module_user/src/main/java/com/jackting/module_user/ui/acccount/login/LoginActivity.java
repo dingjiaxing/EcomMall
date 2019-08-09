@@ -11,6 +11,7 @@ import com.jackting.common.base.BaseActivity;
 import com.jackting.common.util.ToastUtil;
 import com.jackting.lib_router.module.main.MainIntent;
 import com.jackting.lib_router.provider.IUserProvider;
+import com.jackting.lib_router.router.ModuleRouter;
 import com.jackting.lib_router.router.ServiceManager;
 import com.jackting.module_user.R;
 import com.jackting.module_user.R2;
@@ -56,7 +57,7 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
 
     @OnClick(R2.id.tv_base_right)
     public void doRegister(){
-
+        ModuleRouter.newInstance(IUserProvider.USER_REGISTER_ACTIVITY).navigation();
     }
 
     @Override

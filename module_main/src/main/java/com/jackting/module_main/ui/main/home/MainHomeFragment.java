@@ -10,6 +10,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.jackting.common.base.BaseFragment;
 import com.jackting.common.data.img.ImageLoader;
+import com.jackting.lib_router.provider.IGoodsProvider;
+import com.jackting.lib_router.provider.IMainProvider;
+import com.jackting.lib_router.router.ModuleRouter;
 import com.jackting.module_main.R;
 import com.jackting.module_main.R2;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
@@ -153,7 +156,7 @@ public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements
 
     @OnClick(R2.id.ll_home_scan)
     public void clickScan(){
-
+        ModuleRouter.newInstance(IMainProvider.SCAN_ACTIVITY).navigation();
     }
     @OnClick(R2.id.ll_home_msg)
     public void clickMsg(){
@@ -161,6 +164,6 @@ public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements
     }
     @OnClick(R2.id.fl_home_top_search)
     public void clickSearch(){
-
+        ModuleRouter.newInstance(IGoodsProvider.GOODS_SEARCH_ACTIVITY).navigation();
     }
 }

@@ -12,6 +12,8 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.jackting.common.base.BaseFragment;
 import com.jackting.lib_router.provider.IGoodsProvider;
+import com.jackting.lib_router.provider.IMainProvider;
+import com.jackting.lib_router.router.ModuleRouter;
 import com.jackting.module_goods.R;
 import com.jackting.module_goods.R2;
 import com.jackting.module_goods.adapter.CategoryLeftAdapter;
@@ -256,7 +258,12 @@ public class MainCategoryFragment extends BaseFragment<MainCategoryPresenter> im
 
     @OnClick({R2.id.rl_category_scan})
     void doScan(){
+        ModuleRouter.newInstance(IMainProvider.SCAN_ACTIVITY).navigation();
+    }
 
+    @OnClick(R2.id.fl_goods_category_search)
+    void doSearch(){
+        ModuleRouter.newInstance(IGoodsProvider.GOODS_SEARCH_ACTIVITY).navigation();
     }
 
     void initTestData(){

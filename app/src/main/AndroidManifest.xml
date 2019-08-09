@@ -37,6 +37,14 @@
         </activity>
         <activity android:name="com.jackting.module_user.ui.acccount.login.LoginActivity"
             />
+        <activity android:name="com.jackting.module_user.ui.acccount.about_us.AboutUsActivity"/>
+        <activity android:name="com.jackting.module_user.ui.acccount.register.RegisterActivity"/>
+
+        <activity android:name="com.jackting.module_goods.ui.search.SearchActivity"/>
+
+        <activity android:name="com.jackting.module_main.ui.scan.ScanActivity"/>
+
+
     </application>
 
 </manifest>

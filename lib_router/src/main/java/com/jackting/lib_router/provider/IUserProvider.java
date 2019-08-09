@@ -13,6 +13,10 @@ public interface IUserProvider extends IFragmentProvider {
     //loginActivity页面
     String USER_PROFILE_LOGIN_ACTIVITY = "/user/profile/login";
 
+    String USER_ABOUT_US_ACTIVITY = "/user/activity/about_us";
+
+    String USER_REGISTER_ACTIVITY = "/user/activity/register";
+
     //设置
     String USER_SETTING_ACTIVITY="/user/setting/activity";
 
