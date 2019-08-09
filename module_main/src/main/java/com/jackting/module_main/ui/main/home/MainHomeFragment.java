@@ -12,6 +12,7 @@ import com.jackting.common.base.BaseFragment;
 import com.jackting.common.data.img.ImageLoader;
 import com.jackting.lib_router.provider.IGoodsProvider;
 import com.jackting.lib_router.provider.IMainProvider;
+import com.jackting.lib_router.provider.IMsgProvider;
 import com.jackting.lib_router.router.ModuleRouter;
 import com.jackting.module_main.R;
 import com.jackting.module_main.R2;
@@ -160,7 +161,7 @@ public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements
     }
     @OnClick(R2.id.ll_home_msg)
     public void clickMsg(){
-
+        ModuleRouter.newInstance(IMsgProvider.MSG_LIST_ACTIVITY).navigation();
     }
     @OnClick(R2.id.fl_home_top_search)
     public void clickSearch(){

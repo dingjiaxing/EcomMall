@@ -44,6 +44,8 @@
 
         <activity android:name="com.jackting.module_main.ui.scan.ScanActivity"/>
 
+        <activity android:name="com.jackting.module_msg.ui.msg.MsgListActivity"/>
+
 
     </application>
 
