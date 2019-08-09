@@ -1,16 +1,18 @@
-package com.jackting.lib_router.module.order;
+package com.jackting.lib_router.module.user;
 
 
 import com.jackting.lib_router.provider.IOrderProvider;
+import com.jackting.lib_router.provider.IUserProvider;
 import com.jackting.lib_router.router.ModuleManager;
 
 /**
  * Created by djx on 2017/4/21.
  */
 
-public class OrderService {
+public class UserService {
+
     private static boolean hasModule() {
-        return ModuleManager.getInstance().hasModule(IOrderProvider.ORDER_MAIN_SERVICE);
+        return ModuleManager.getInstance().hasModule(IUserProvider.USER_MAIN_SERVICE);
     }
 
 //    public static Fragment getModule3Fragment(Object... args) {

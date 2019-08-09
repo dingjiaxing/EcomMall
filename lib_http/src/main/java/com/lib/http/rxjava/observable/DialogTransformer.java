@@ -35,6 +35,14 @@ public class DialogTransformer {
         this(activity, msg, false);
     }
 
+    public DialogTransformer(Activity activity, int msgStringId) {
+        this(activity,activity.getString(msgStringId),false);
+    }
+
+    public DialogTransformer(Activity activity, int msgStringId, boolean cancelable) {
+        this(activity,activity.getString(msgStringId),cancelable);
+    }
+
     public DialogTransformer(Activity activity, String msg, boolean cancelable) {
         this.activity = activity;
         this.msg = msg;
@@ -51,6 +59,7 @@ public class DialogTransformer {
                     @Override
                     public void accept(@NonNull final Disposable disposable) throws Exception {
                         progressDialog = ProgressDialog.show(activity, null, msg, true, cancelable);
+                        progressDialog.setProgressStyle(ProgressDialog.THEME_DEVICE_DEFAULT_LIGHT);
                         if (cancelable) {
                             progressDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
                                 @Override

@@ -12,7 +12,7 @@ import com.jackting.lib_router.provider.base.BaseProvider;
 public class MsgProvider extends BaseProvider implements IMsgProvider {
 
     @Override
-    public void init(Context context) {
+    public void init() {
 
     }
 }

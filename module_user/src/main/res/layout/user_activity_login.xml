@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
     <include layout="@layout/user_base_title"/>
 
     <LinearLayout
@@ -19,7 +21,7 @@
 
 
             <EditText
-                android:id="@+id/et_user_login_new_phone"
+                android:id="@+id/et_user_login_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -27,8 +29,8 @@
                 android:layout_marginRight="15dp"
                 android:background="@drawable/user_shape_et_downline_bg"
                 android:gravity="center_vertical"
-                android:hint="请输入手机号"
-
+                android:hint="请输入用户名"
+                android:text="166123456"
                 android:paddingBottom="8dp"
                 android:singleLine="true"
                 android:textColor="@color/gray_b1"
@@ -61,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:orientation="vertical"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -80,7 +82,7 @@
                     </ImageView>
 
                     <EditText
-                        android:id="@+id/et_user_login_new_password"
+                        android:id="@+id/et_user_login_pwd"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -90,6 +92,7 @@
                         android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                         android:gravity="center_vertical"
                         android:hint="请输入密码"
+                        android:text="123456"
                         android:inputType="textPassword"
                         android:maxLength="16"
                         android:paddingBottom="8dp"
@@ -114,47 +117,48 @@
                 android:textSize="12dp"
                 android:visibility="gone" />
 
-            <RelativeLayout
-                android:id="@+id/rl_user_login_new_identify_code"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:paddingRight="15dp"
-                android:visibility="visible">
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_user_login_new_identify_code"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:paddingRight="15dp"-->
+                <!--android:visibility="gone">-->
 
-                <EditText
-                    android:id="@+id/et_user_login_new_identify_code"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:background="@drawable/user_shape_et_downline_bg"
-                    android:gravity="center_vertical"
-                    android:hint="请输入验证码"
-                    android:inputType="number"
-                    android:maxLength="6"
-                    android:paddingBottom="8dp"
-                    android:singleLine="true"
-                    android:textColor="@color/gray_b1"
-                    android:textSize="14dp" />
+                <!--<EditText-->
+                    <!--android:id="@+id/et_user_login_new_identify_code"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="25dp"-->
+                    <!--android:background="@drawable/user_shape_et_downline_bg"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:hint="请输入验证码"-->
+                    <!--android:inputType="number"-->
+                    <!--android:maxLength="6"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textColor="@color/gray_b1"-->
+                    <!--android:textSize="14dp"-->
+                    <!--/>-->
 
-                <TextView
-                    android:id="@+id/tv_user_login_new_get_identify_code"
-                    android:layout_width="80dp"
-                    android:layout_height="25dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_gravity="center_vertical"
-                    android:background="@drawable/user_shape_renctange_gray_hollow_bg"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:padding="0dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="8dp"
-                    android:includeFontPadding="true"
-                    android:text="获取验证码"
-                    android:textColor="@color/gray_55"
-                    android:textSize="12dp" />
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_user_login_new_get_identify_code"-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:background="@drawable/user_shape_renctange_gray_hollow_bg"-->
+                    <!--android:enabled="false"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="0dp"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:includeFontPadding="true"-->
+                    <!--android:text="获取验证码"-->
+                    <!--android:textColor="@color/gray_55"-->
+                    <!--android:textSize="12dp" />-->
 
 
-            </RelativeLayout>
+            <!--</RelativeLayout>-->
 
             <Button
                 android:id="@+id/btn_login"
@@ -179,7 +183,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/ll_user_fragment_login_wechat"
+            android:layout_above="@+id/ll_user_login_wechat"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="19dp">
 
@@ -218,7 +222,7 @@
 
         <LinearLayout
 
-            android:id="@+id/ll_user_fragment_login_wechat"
+            android:id="@+id/ll_user_login_wechat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clickable="true"

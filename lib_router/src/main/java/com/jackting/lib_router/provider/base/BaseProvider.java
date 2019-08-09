@@ -1,5 +1,6 @@
 package com.jackting.lib_router.provider.base;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
 
@@ -10,6 +11,17 @@ import com.jackting.lib_router.provider.IUserProvider;
 import com.jackting.lib_router.router.ModuleRouter;
 
 public abstract class BaseProvider implements IFragmentProvider {
+
+    protected Context mContext;
+
+    @Override
+    public void init(Context context) {
+        mContext = context;
+        init();
+    }
+
+    public abstract void init();
+
     @Override
     public Fragment newInstance(String type) {
         return newInstance(type, null);

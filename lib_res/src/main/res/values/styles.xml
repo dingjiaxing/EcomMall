@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="res_ThemeYh" parent="Theme.AppCompat.NoActionBar">
+    <style name="res_ThemeYh" parent="Theme.AppCompat.Light.NoActionBar">
         <!--<item name="android:statusBarColor">@color/black</item>-->
         <item name="android:windowBackground">@color/res_windowBackground</item>
         <item name="colorPrimary">@color/res_colorPrimary</item>
@@ -10,5 +10,13 @@
         <item name="android:textColorHint">@color/res_colorTextHintColor</item>
         <item name="colorAccent">@color/res_colorAccent</item>
         <!--<item name="toolbarStyle">@style/ClubToolbar</item>-->
+    </style>
+
+    <style name="res_TranslucentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/res_transparent</item>
+        　　
+        　　<item name="android:windowIsTranslucent">true</item>
+        　　
+        　　<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
     </style>
 </resources>

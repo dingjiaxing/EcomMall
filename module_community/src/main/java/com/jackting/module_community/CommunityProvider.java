@@ -12,8 +12,9 @@ import com.jackting.module_community.ui.main.MainCommunityFragment;
 
 @Route(path = ICommunityProvider.COMMUNITY_MAIN_SERVICE)
 public class CommunityProvider extends BaseProvider implements ICommunityProvider {
+
     @Override
-    public void init(Context context) {
+    public void init() {
 
     }
 }

@@ -6,7 +6,7 @@ import com.jackting.lib_router.provider.IOrderProvider;
 import com.jackting.lib_router.router.ModuleRouter;
 
 /**
- * Created by wxmylife on 2017/4/21.
+ * Created by djx on 2017/4/21.
  */
 
 public class OrderIntent {

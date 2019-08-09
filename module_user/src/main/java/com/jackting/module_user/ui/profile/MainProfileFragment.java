@@ -6,6 +6,7 @@ import android.widget.Button;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.jackting.common.base.BaseFragment;
+import com.jackting.lib_router.module.user.UserIntent;
 import com.jackting.lib_router.provider.IUserProvider;
 import com.jackting.lib_router.router.ServiceManager;
 import com.jackting.module_user.R;
@@ -84,7 +85,7 @@ public class MainProfileFragment extends BaseFragment<MainProfilePresenter> impl
     @OnClick({R2.id.btn_login})
     void doClick(View view){
         if(view.getId()==R.id.btn_login){
-            ServiceManager.getInstance().getUserProvider().startLoginActivity();
+            UserIntent.startLoginActivity();
 //            ARouter.getInstance().build(IUserProvider.USER_PROFILE_LOGIN_ACTIVITY).navigation();
         }
     }

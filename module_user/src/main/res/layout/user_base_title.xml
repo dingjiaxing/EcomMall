@@ -38,9 +38,10 @@ android:background="@color/white">
     android:layout_height="match_parent"
     android:layout_centerInParent="true"
     android:layout_alignParentRight="true"
-    android:layout_marginRight="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="15dp"
     android:gravity="center"
-    android:text="注册新用户"
+    android:text="注册"
     android:textColor="@color/gray_33"
     android:textSize="14dp" />
 

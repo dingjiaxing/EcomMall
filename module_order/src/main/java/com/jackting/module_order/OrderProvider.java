@@ -12,7 +12,7 @@ import com.jackting.lib_router.provider.base.BaseProvider;
 public class OrderProvider extends BaseProvider implements IOrderProvider {
 
     @Override
-    public void init(Context context) {
+    public void init() {
 
     }
 }

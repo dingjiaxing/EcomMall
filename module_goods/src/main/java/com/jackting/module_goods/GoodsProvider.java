@@ -11,8 +11,9 @@ import com.jackting.lib_router.provider.base.BaseProvider;
 
 @Route(path = IGoodsProvider.GOODS_MAIN_SERVICE)
 public class GoodsProvider extends BaseProvider implements IGoodsProvider {
+
     @Override
-    public void init(Context context) {
+    public void init() {
 
     }
 }

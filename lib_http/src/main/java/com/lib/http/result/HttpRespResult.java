@@ -1,5 +1,7 @@
 package com.lib.http.result;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * <p>Description:
  *
@@ -9,21 +11,22 @@ package com.lib.http.result;
 public class HttpRespResult<T> {
 
     private static final int SUCCESS_CODE = 0;
-
-    private String errorMsg;
-    private Integer errorCode;
+    @SerializedName("errorMsg")
+    private String msg;
+    @SerializedName("errorCode")
+    private Integer code;
     private T data;
 
     public boolean isSuccess() {
-        return errorCode != null && errorCode == SUCCESS_CODE;
+        return code != null && code == SUCCESS_CODE;
     }
 
     public String getMessage() {
-        return errorMsg;
+        return msg;
     }
 
     public Integer getCode() {
-        return errorCode;
+        return code;
     }
 
     public T getData() {
@@ -33,8 +36,8 @@ public class HttpRespResult<T> {
     @Override
     public String toString() {
         return "HttpResponseResult{" +
-                "msg='" + errorMsg + '\'' +
-                ", errorCode=" + errorCode +
+                "msg='" + msg + '\'' +
+                ", code=" + code +
                 ", data=" + data +
                 '}';
     }

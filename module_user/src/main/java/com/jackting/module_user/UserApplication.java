@@ -4,10 +4,33 @@ import android.app.Application;
 
 import com.jackting.common.CommonApplication;
 import com.jackting.common.base.IApplication;
+import com.jackting.module_user.data.http.UserApiService;
+import com.lib.http.manager.HttpManager;
 
 public class UserApplication implements IApplication {
+    public static  Application sApp = null;
     @Override
     public void onCreate(Application application) {
-//        new CommonApplication().onCreate(application);
+        sApp = application;
+        initHttp();
+    }
+
+    void initHttp(){
+        HttpManager.setConfigProvider(sApp, new HttpManager.ConfigProvider() {
+            @Override
+            public String getUserToken() {
+                return null;
+            }
+
+            @Override
+            public boolean isDebug() {
+                return CommonApplication.isDebug();
+            }
+
+            @Override
+            public String getBaseUrl() {
+                return UserApiService.BASE_URL;
+            }
+        });
     }
 }

@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -17,6 +18,7 @@ import com.google.android.material.bottomnavigation.LabelVisibilityMode;
 import com.jackting.common.base.BaseActivity;
 import com.jackting.lib_router.provider.ICommunityProvider;
 import com.jackting.lib_router.provider.IGoodsProvider;
+import com.jackting.lib_router.provider.IMainProvider;
 import com.jackting.lib_router.provider.IOrderProvider;
 import com.jackting.lib_router.provider.IUserProvider;
 import com.jackting.lib_router.router.ServiceManager;
@@ -31,6 +33,7 @@ import javax.inject.Inject;
 
 import butterknife.BindView;
 
+@Route(path = IMainProvider.MAIN_ACTIVITY)
 public class MainActivity extends BaseActivity<MainPresenter> {
 
     @BindView(R2.id.bottom_view)
