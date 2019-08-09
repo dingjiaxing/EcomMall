@@ -34,3 +34,4 @@
 3. [架构师的思维，聊一聊APP组件化的那些事儿](https://mp.weixin.qq.com/s/EdfWRj7dF4XtIo_xqP6_sA) [备用](https://juejin.im/post/5d37a0e8e51d4510a37bacc5)
 4. [WanAndroid架构源码](https://github.com/senonwx/WanAndroid)
 5. [仿京东app](https://github.com/liu-xiao-dong/JD-Test)
+6. [MVPArms](https://github.com/JessYanCoding/MVPArms)

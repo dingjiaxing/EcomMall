@@ -13,6 +13,8 @@ import com.jackting.common.base.interfaces.IPresenter;
 import com.jackting.common.base.interfaces.IView;
 import com.jackting.common.di.component.AppComponent;
 
+import org.greenrobot.eventbus.EventBus;
+
 import javax.inject.Inject;
 
 import butterknife.ButterKnife;
@@ -39,6 +41,9 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
             if(presenter != null && presenter instanceof BasePresenter){
                 ((BasePresenter)presenter).takeView(this);
             }
+            if(useEventBus()){
+                EventBus.getDefault().register(this);
+            }
         }catch (Exception e){
             if(e instanceof InflateException) throw e;
             e.printStackTrace();
@@ -49,6 +54,9 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        if(useEventBus()){
+            EventBus.getDefault().unregister(this);
+        }
         if(mUnbinder != Unbinder.EMPTY){
             mUnbinder.unbind();
         }
@@ -62,4 +70,9 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
     }
 
 //    public abstract BasePresenter createPresenter();
+
+    //默认不使用EventBus，如果要使用请重写该方法并返回true
+    public boolean useEventBus() {
+        return false;
+    }
 }

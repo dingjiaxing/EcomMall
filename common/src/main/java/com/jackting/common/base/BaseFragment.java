@@ -14,6 +14,8 @@ import androidx.fragment.app.Fragment;
 import com.jackting.common.base.interfaces.IFragment;
 import com.jackting.common.base.interfaces.IView;
 
+import org.greenrobot.eventbus.EventBus;
+
 import javax.inject.Inject;
 
 import butterknife.ButterKnife;
@@ -62,6 +64,9 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
         if(presenter!=null){
             presenter.takeView(this);
         }
+        if(useEventBus()){
+            EventBus.getDefault().register(this);
+        }
         init(savedInstanceState);
     }
 
@@ -74,6 +79,9 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        if(useEventBus()){
+            EventBus.getDefault().unregister(this);
+        }
         if(mUnbinder != Unbinder.EMPTY){
             mUnbinder.unbind();
         }
@@ -87,5 +95,10 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
     public void onDetach() {
         super.onDetach();
         mContext = null;
+    }
+
+    //默认不使用EventBus，如果要使用请重写该方法并返回true
+    public boolean useEventBus() {
+        return false;
     }
 }

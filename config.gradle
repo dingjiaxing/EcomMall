@@ -26,6 +26,7 @@ ext {
     //https://github.com/alibaba/fastjson
     fastjsonVersion="1.2.59"
     fastjsonVersionAndroid="1.1.71.android"
-
+    // EventBus
+    eventBusVersion = "3.1.1"
 
 }

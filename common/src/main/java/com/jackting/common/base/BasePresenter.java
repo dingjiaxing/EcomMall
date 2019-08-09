@@ -4,6 +4,8 @@ import com.jackting.common.base.interfaces.IModel;
 import com.jackting.common.base.interfaces.IPresenter;
 import com.jackting.common.base.interfaces.IView;
 
+import org.greenrobot.eventbus.EventBus;
+
 import javax.inject.Inject;
 
 public abstract class BasePresenter<M extends IModel, V extends IView> implements IPresenter {
@@ -18,6 +20,9 @@ public abstract class BasePresenter<M extends IModel, V extends IView> implement
 
     public void takeView(V view) {
         this.view =  view;
+        if(useEventBus()){
+            EventBus.getDefault().register(this);
+        }
         init();
     }
 
@@ -25,5 +30,12 @@ public abstract class BasePresenter<M extends IModel, V extends IView> implement
     public void dropView() {
         model = null;
         view = null;
+        if(useEventBus()){
+            EventBus.getDefault().unregister(this);
+        }
+    }
+    //默认不使用EventBus，如果要使用请重写该方法并返回true
+    public boolean useEventBus() {
+        return false;
     }
 }

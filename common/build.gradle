@@ -56,4 +56,6 @@ dependencies {
     //https://github.com/alibaba/fastjson
     api "com.alibaba:fastjson:$rootProject.fastjsonVersion"
     api "com.alibaba:fastjson:$rootProject.fastjsonVersionAndroid"
+    // EventBus
+    implementation "org.greenrobot:eventbus:$rootProject.eventBusVersion"
 }
