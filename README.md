@@ -1,6 +1,7 @@
 ## ECom商城
-1. ECom商城是一个基于MVP+dagger+arouter实现的android商城，主要采用了MVP+组件化架构，同时
-集成了retrofit+rxJava2、okhttp、MMKV、EventBus、Glide等，可用于android中级及以上学习此架构、android团队直接参考此架构进行开发。
+1. ECom商城是一个基于MVP+dagger+arouter实现的android商城，开发模式采用了MVP+dagger，组件间路由采用arouter，
+网络通信使用了okhttp+retrofit+rxJava2，配置存储采用MMKV，数据传递采用EventBus，图片加载使用glide，
+可用于android中级及以上学习此架构、android团队直接参考此架构进行开发。
 
 ### 架构介绍
 #### 架构图
