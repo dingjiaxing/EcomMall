@@ -4,11 +4,114 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="category"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:background="#b0b0b0"
+            android:id="@+id/goods_fragment_category_status_bar"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="30dp" />
 
-        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/rl_category_scan"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_back_search"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/res_icon_scan_gray" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/rl_category_scan">
+
+                <View
+                    android:id="@+id/home_search_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/ll_goods_category_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/goods_home_bg_search"
+                    android:clipToPadding="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_goods_home_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/goods_icon_goods_home_search"
+                        android:gravity="center_vertical"
+                        android:scaleType="centerCrop"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_goods_category_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="search"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_category_fragment_left"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"></androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_category_fragment_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

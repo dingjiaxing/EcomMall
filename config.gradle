@@ -28,5 +28,7 @@ ext {
     fastjsonVersionAndroid="1.1.71.android"
     // EventBus
     eventBusVersion = "3.1.1"
+    // https://github.com/CymChad/BaseRecyclerViewAdapterHelper
+    baseRecyclerViewAdapterHelperVersion="2.9.47-androidx"
 
 }

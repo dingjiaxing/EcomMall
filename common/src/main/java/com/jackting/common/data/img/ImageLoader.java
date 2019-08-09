@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide;
  * 此包装类的目的在于 可以灵活切换glide、picasso等而不需要大量修改代码，
  * 仅修改当前类的into方法即可
  */
-public class ImgLoadEngine {
+public class ImageLoader {
 
     public static RequestBuilder with(Context context){
         return new RequestBuilder(context);

@@ -8,19 +8,16 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
 import com.jackting.common.base.BaseFragment;
-import com.jackting.common.data.img.ImgLoadEngine;
+import com.jackting.common.data.img.ImageLoader;
 import com.jackting.module_main.R;
 import com.jackting.module_main.R2;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
-import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
-import com.youth.banner.loader.ImageLoader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +25,7 @@ import java.util.List;
 import javax.inject.Inject;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 
 public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements MainHomeContract.View {
 
@@ -64,10 +62,10 @@ public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements
     }
 
     void initBanner(){
-        banner.setImageLoader(new ImageLoader() {
+        banner.setImageLoader(new com.youth.banner.loader.ImageLoader() {
             @Override
             public void displayImage(Context context, Object path, ImageView imageView) {
-                ImgLoadEngine.with(context).load(path).into(imageView);
+                ImageLoader.with(context).load(path).into(imageView);
 //                Glide.with(context).load(path).into(imageView);
             }
         });
@@ -150,6 +148,19 @@ public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements
 
     @Override
     public void showLoading() {
+
+    }
+
+    @OnClick(R2.id.ll_home_scan)
+    public void clickScan(){
+
+    }
+    @OnClick(R2.id.ll_home_msg)
+    public void clickMsg(){
+
+    }
+    @OnClick(R2.id.fl_home_top_search)
+    public void clickSearch(){
 
     }
 }

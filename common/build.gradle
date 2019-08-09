@@ -37,6 +37,7 @@ dependencies {
 //    androidTestImplementation 'com.android.support.test:runner:1.0.2'
 //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     api "androidx.appcompat:appcompat:$rootProject.androidXVersion"
+    api 'androidx.recyclerview:recyclerview:1.0.0-alpha1'
 
     // https://github.com/JakeWharton/butterknife
     api "com.jakewharton:butterknife:$rootProject.butterknifeVersion"
@@ -69,4 +70,9 @@ dependencies {
     api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-andx-16'
     api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-andx-16'
     api 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // https://github.com/CymChad/BaseRecyclerViewAdapterHelper
+    compile "com.github.CymChad:BaseRecyclerViewAdapterHelper:$rootProject.baseRecyclerViewAdapterHelperVersion"
+    // https://github.com/hongyangAndroid/baseAdapter
+    compile 'com.zhy:base-rvadapter:3.0.3'
 }

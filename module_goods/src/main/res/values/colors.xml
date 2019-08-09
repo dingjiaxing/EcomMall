@@ -3,4 +3,12 @@
     <color name="goods_colorPrimary">#008577</color>
     <color name="goods_colorPrimaryDark">#00574B</color>
     <color name="goods_colorAccent">#D81B60</color>
+
+    <color name="goods_category_left_item_default">#333333</color>
+    <color name="goods_category_left_item_bg_unselected">#ffffff</color>
+    <color name="goods_category_left_item_bg_selected">#f5f5f5</color>
+
+    <color name="goods_red_d6">#d6191d</color>
+
+
 </resources>

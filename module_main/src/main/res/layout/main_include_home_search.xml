@@ -6,7 +6,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <!--二维码扫描 -->
     <LinearLayout
-        android:id="@+id/ll_dimcode"
+        android:id="@+id/ll_home_scan"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
@@ -38,7 +38,7 @@
     </LinearLayout>
     <!--消息 -->
     <LinearLayout
-        android:id="@+id/ll_message"
+        android:id="@+id/ll_home_msg"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
@@ -91,12 +91,13 @@
 
     <!--搜索框 -->
     <FrameLayout
+        android:id="@+id/fl_home_top_search"
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:layout_centerVertical="true"
         android:layout_gravity="center"
-        android:layout_toLeftOf="@+id/ll_message"
-        android:layout_toRightOf="@+id/ll_dimcode">
+        android:layout_toLeftOf="@+id/ll_home_msg"
+        android:layout_toRightOf="@+id/ll_home_scan">
 
         <View
             android:id="@+id/home_search_background"

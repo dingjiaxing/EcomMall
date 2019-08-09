@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:drawable="@drawable/goods_index_category_left_selected_bg"
+        android:width="90dp"
+        android:height="65dp"/>
+
+
+    <!--<item-->
+        <!--android:drawable="@color/colorPrimary"-->
+        <!--android:width="1dp"-->
+        <!--android:height="65dp"-->
+        <!--android:gravity="left"/>-->
+
+</layer-list>
