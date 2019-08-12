@@ -5,7 +5,7 @@ package com.jackting.module_order.ui.main;
 import com.jackting.common.base.interfaces.IModel;
 import com.jackting.common.base.interfaces.IView;
 
-public interface MainOrderContract {
+public interface MainCartContract {
 
     interface View extends IView {
     }

@@ -27,6 +27,7 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
     private Unbinder mUnbinder;
     protected View rootView;
     @Inject
+    @Nullable
     protected P presenter;
     protected Context mContext;
 

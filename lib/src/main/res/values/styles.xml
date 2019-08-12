@@ -19,4 +19,36 @@
         　　
         　　<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
     </style>
+
+    <!-- 标题 -->
+    <style name="res_title">
+        <item name="android:textColor">@color/gray_33</item>
+        <item name="android:textSize">@dimen/res_title_text</item>
+    </style>
+    <!-- 主要文字-->
+    <style name="res_text">
+        <item name="android:textColor">@color/gray_33</item>
+        <item name="android:textSize">@dimen/res_text</item>
+    </style>
+    <!-- 辅助文字 -->
+    <style name="res_text_assist">
+        <item name="android:textColor">@color/gray_b1</item>
+        <item name="android:textSize">@dimen/res_text_assist</item>
+    </style>
+
+    <!-- 次要文字 -->
+    <style name="res_text_secondary">
+        <item name="android:textColor">@color/gray_33</item>
+        <item name="android:textSize">@dimen/res_text_secondary</item>
+    </style>
+    <!-- 第三文字 -->
+    <style name="res_text_assist_third">
+        <item name="android:textColor">@color/gray_55</item>
+        <item name="android:textSize">@dimen/res_text_assist</item>
+    </style>
+    <!-- 提示文字 -->
+    <style name="res_text_hint">
+        <item name="android:textColor">@color/gray_33</item>
+        <item name="android:textSize">@dimen/res_text_hint</item>
+    </style>
 </resources>

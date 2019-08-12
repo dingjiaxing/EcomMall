@@ -31,4 +31,8 @@ ext {
     // https://github.com/CymChad/BaseRecyclerViewAdapterHelper
     baseRecyclerViewAdapterHelperVersion="2.9.47-androidx"
 
+    // https://github.com/afollestad/material-dialogs
+    materialDialogsVersion="0.9.4.5"
+    // https://github.com/vinc3m1/RoundedImageView
+    roundImagesViewVersion="2.3.0"
 }

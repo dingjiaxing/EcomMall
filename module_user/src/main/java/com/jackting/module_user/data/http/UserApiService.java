@@ -1,7 +1,7 @@
 package com.jackting.module_user.data.http;
 
+import com.jackting.common_http.result.HttpRespResult;
 import com.jackting.lib_router.module.user.bean.UserEntity;
-import com.lib.http.result.HttpRespResult;
 
 import io.reactivex.Observable;
 import retrofit2.http.Field;

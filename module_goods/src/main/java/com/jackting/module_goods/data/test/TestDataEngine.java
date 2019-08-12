@@ -5,6 +5,7 @@ import android.content.res.AssetManager;
 
 import com.alibaba.fastjson.JSON;
 import com.jackting.common.CommonApplication;
+import com.jackting.common.util.AssetUtil;
 import com.jackting.module_goods.bean.entity.CategoryEntity;
 
 import java.io.BufferedReader;
@@ -21,7 +22,7 @@ public class TestDataEngine {
         CategoryTestData categoryTestData = null;
 //        List<CategoryEntity> list = new ArrayList<>();
 
-        String json = getJson("category.json", CommonApplication.getContext());
+        String json = AssetUtil.getJson("category.json", CommonApplication.getContext());
 
         categoryTestData = JSON.parseObject(json,CategoryTestData.class);
 
@@ -34,24 +35,7 @@ public class TestDataEngine {
     }
 
 
-    public static String getJson(String fileName, Context context) {
-        //将json数据变成字符串
-        StringBuilder stringBuilder = new StringBuilder();
-        try {
-            //获取assets资源管理器
-            AssetManager assetManager = context.getAssets();
-            //通过管理器打开文件并读取
-            BufferedReader bf = new BufferedReader(new InputStreamReader(
-                    assetManager.open(fileName)));
-            String line;
-            while ((line = bf.readLine()) != null) {
-                stringBuilder.append(line);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return stringBuilder.toString();
-    }
+
 
 
 }

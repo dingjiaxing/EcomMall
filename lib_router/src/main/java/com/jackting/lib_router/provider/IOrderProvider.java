@@ -8,6 +8,8 @@ public interface IOrderProvider extends IFragmentProvider {
 
     String ORDER_CART_FRAGMENT = "/order/cart/fragment";
 
+    String ORDER_ENSURE_ACTIVITY="/order/ensure/activity";
+
     //个人中心的订单列表
     String ORDER_USER_CENTER="/order/user/center";
 

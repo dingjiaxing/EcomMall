@@ -12,4 +12,19 @@
     <string name="user_password_cannot_be_empty">密码不能为空</string>
 
 
+    <string name="user_order_title">我的订单</string>
+    <string name="user_order_status_all">全部</string>
+    <string name="user_order_status_wait_pay_title">待付款</string>
+    <string name="user_order_status_wait_send_title">待发货</string>
+    <string name="user_order_status_wait_receive_title">待收货</string>
+    <string name="user_order_status_wait_comment_title">待评价</string>
+    <string name="user_order_status_wait_finished_title">已完成</string>
+
+
+    <string name="user_select_all">查看全部订单</string>
+    
+    <string name="user_profile_goods_follow">商品关注</string>
+    <string name="user_profile_shop_follow">店铺关注</string>
+    <string name="user_profile_like_content">喜欢的内容</string>
+    <string name="user_profile_browse_record">浏览记录</string>
 </resources>

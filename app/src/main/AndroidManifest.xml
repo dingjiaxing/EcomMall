@@ -41,12 +41,13 @@
         <activity android:name="com.jackting.module_user.ui.acccount.register.RegisterActivity"/>
 
         <activity android:name="com.jackting.module_goods.ui.search.SearchActivity"/>
+        <activity android:name="com.jackting.module_goods.ui.goods.GoodsDetailActivity"/>
 
         <activity android:name="com.jackting.module_main.ui.scan.ScanActivity"/>
 
         <activity android:name="com.jackting.module_msg.ui.msg.MsgListActivity"/>
 
-
+        <activity android:name="com.jackting.module_order.ui.order_ensure.OrderEnsureActivity"/>
     </application>
 
 </manifest>

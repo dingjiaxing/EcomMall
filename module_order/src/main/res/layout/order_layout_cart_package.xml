@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e4"/>
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/accb_cart_package_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:button="@drawable/order_cart_item_checkbox_bg"
+        android:layout_centerVertical="true"/>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="@color/common_light_gray"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginLeft="45dp"-->
+        <!--android:layout_marginRight="14dp"/>-->
+
+</LinearLayout>

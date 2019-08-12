@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingRight="20dp"
+    android:gravity="center_vertical"
+    android:background="@color/white">
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#e2e2e4"/>-->
+    <ImageView
+        android:id="@+id/iv_cart_good_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/accb_cart_good"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/tv_cart_good_count"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/gray_4d"
+        android:text="X1"
+        />
+    <TextView
+        android:id="@+id/tv_cart_good_per_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_cart_good_image"
+        android:text="￥"
+        android:textSize="13sp"
+        android:layout_alignParentBottom="true" />
+    <LinearLayout
+        android:id="@+id/ll_item_cart_good_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/iv_cart_good_image"
+        android:layout_above="@+id/cv_cart_good_count"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tv_cart_good_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:lines="3"
+            android:maxLines="3"
+            android:textSize="13sp"
+            android:textColor="@color/gray_66"
+            />
+
+        <TextView
+            android:id="@+id/tv_cart_good_spec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text=""
+            android:layout_marginTop="5dp"/>
+        <!--<TextView-->
+        <!--android:id="@+id/tv_cart_good_down"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="12sp"-->
+        <!--android:text="已降: 0.90"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:textColor="@color/red"/>-->
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

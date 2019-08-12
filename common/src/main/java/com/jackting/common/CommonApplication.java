@@ -9,6 +9,7 @@ import com.jackting.common.data.config.ConfigDataEngine;
 import com.jackting.common.di.component.AppComponent;
 import com.jackting.common.di.component.DaggerAppComponent;
 import com.jackting.common.di.module.AppModule;
+import com.jackting.common.util.ToastUtil;
 
 public class CommonApplication extends Application {
 
@@ -48,6 +49,7 @@ public class CommonApplication extends Application {
         modulesApplicationInit();
         //初始化配置数据引擎
         ConfigDataEngine.init(this);
+        ToastUtil.init(this);
     }
 
     private void modulesApplicationInit(){

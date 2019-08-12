@@ -2,7 +2,9 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/res_gray_f5"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -94,7 +96,6 @@
             android:layout_height="match_parent"
             android:layout_marginTop="1dp"
             android:orientation="horizontal"
-
             >
 
             <androidx.recyclerview.widget.RecyclerView

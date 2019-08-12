@@ -8,4 +8,41 @@
         <item name="colorAccent">@color/user_colorAccent</item>
     </style>
 
+
+
+    <style name="user_ProfileTopTextLL">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="user_ProfileTopTextCountStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/res_white</item>
+    </style>
+
+    <style name="user_ProfileTopTextHintStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/res_white</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <style name="user_ProfileToolIVStyle">
+        <item name="android:layout_width">23dp</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:textColor">@color/res_white</item>
+    </style>
+    <style name="user_ProfileToolTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/res_gray_55</item>
+        <item name="android:layout_marginTop">9dp</item>
+    </style>
+
 </resources>

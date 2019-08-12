@@ -7,14 +7,14 @@ import com.jackting.common.base.BasePresenter;
 import com.jackting.common.base.interfaces.IModel;
 import com.jackting.common.base.interfaces.IView;
 import com.jackting.common.data.config.ConfigDataEngine;
+import com.jackting.common_http.result.HttpRespResult;
+import com.jackting.common_http.rxjava.observable.DialogTransformer;
+import com.jackting.common_http.rxjava.observable.SchedulerTransformer;
+import com.jackting.common_http.rxjava.observer.CommonObserver;
 import com.jackting.lib_router.module.user.bean.UserEntity;
 import com.jackting.lib_router.router.ServiceManager;
 import com.jackting.module_user.R;
 import com.jackting.module_user.data.config.UserConfigKey;
-import com.lib.http.result.HttpRespResult;
-import com.lib.http.rxjava.observable.DialogTransformer;
-import com.lib.http.rxjava.observable.SchedulerTransformer;
-import com.lib.http.rxjava.observer.CommonObserver;
 import com.trello.rxlifecycle2.RxLifecycle;
 import com.trello.rxlifecycle2.android.RxLifecycleAndroid;
 

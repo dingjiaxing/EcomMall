@@ -1,7 +1,7 @@
 package com.jackting.module_user.data;
 
+import com.jackting.common_http.retrofit.RetrofitHelper;
 import com.jackting.module_user.data.http.UserApiService;
-import com.lib.http.retrofit.RetrofitHelper;
 
 import javax.inject.Inject;
 

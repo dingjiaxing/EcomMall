@@ -4,8 +4,8 @@ import android.app.Application;
 
 import com.jackting.common.CommonApplication;
 import com.jackting.common.base.IApplication;
+import com.jackting.common_http.manager.HttpManager;
 import com.jackting.module_user.data.http.UserApiService;
-import com.lib.http.manager.HttpManager;
 
 public class UserApplication implements IApplication {
     public static  Application sApp = null;

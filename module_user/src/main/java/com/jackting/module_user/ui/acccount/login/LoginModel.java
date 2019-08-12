@@ -1,10 +1,9 @@
 package com.jackting.module_user.ui.acccount.login;
 
 import com.jackting.common.base.BaseModel;
+import com.jackting.common_http.result.HttpRespResult;
 import com.jackting.lib_router.module.user.bean.UserEntity;
 import com.jackting.module_user.data.UserDataRepository;
-import com.lib.http.result.HttpRespResult;
-import com.lib.http.rxjava.observable.SchedulerTransformer;
 
 import javax.inject.Inject;
 

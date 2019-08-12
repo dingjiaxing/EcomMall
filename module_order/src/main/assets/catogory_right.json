@@ -1,0 +1,32 @@
+{
+  "left":
+  [
+    {"cat_id":"1",
+      "cat_app_name":"男装",
+      "type_img":"",
+      "rank":1
+    },
+    {"cat_id":"2",
+      "cat_app_name":"女装",
+      "type_img":"",
+      "rank":1
+    },
+    {"cat_id":"3",
+      "cat_app_name":"美妆护肤",
+      "type_img":"",
+      "rank":1
+    }
+  ],
+  "right":[
+    {"cat_id":"1",
+      "cat_app_name":"男装",
+      "type_img":"",
+      "rank":1
+    },
+    {"cat_id":"7",
+      "cat_app_name":"休闲裤",
+      "type_img":"",
+      "rank":2
+    }
+  ]
+}

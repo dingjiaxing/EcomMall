@@ -3,4 +3,14 @@
     <color name="main_colorPrimary">#008577</color>
     <color name="main_colorPrimaryDark">#00574B</color>
     <color name="main_colorAccent">#D81B60</color>
+
+    <!-- 二维码扫描部分-->
+    <color name="main_viewfinder_laser">#E40619</color>
+    <!-- 二维码扫描时背景的透明度和颜色 -->
+    <color name="main_viewfinder_mask">#66000000</color>
+    <color name="main_viewfinder_frame">#ff23b7ad</color>
+    <color name="main_backgroud">#ffffffff</color>
+    <color name="main_possible_result_points">#c0ffbd21</color>
+
+
 </resources>

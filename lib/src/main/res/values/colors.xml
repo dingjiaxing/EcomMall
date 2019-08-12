@@ -139,5 +139,6 @@
     <color name="res_red_F02B2B">#F02B2B</color>
     <color name="res_red_F11641">#F11641</color>
 
+    <color name="transparent">#00000000</color>
 
 </resources>

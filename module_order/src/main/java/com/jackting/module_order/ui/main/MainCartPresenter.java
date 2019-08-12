@@ -7,15 +7,25 @@ import javax.inject.Inject;
 public class MainCartPresenter extends BasePresenter<MainCartContract.Model, MainCartContract.View> {
 
     @Inject
-    public MainCartPresenter(MainOrderModel model) {
+    public MainCartPresenter(MainCartModel model) {
         super(model);
     }
 
     @Override
     public void init() {
-        getArticleList();
+
     }
-    void getArticleList(){
+
+    void getCartList(){
+        // todo 通过接口获取数据，demo为从json中拿数据
+
+    }
+
+    void deleteCart(String recIds){
+
+    }
+
+    void getShippingFee(String recIds){
 
     }
 }
