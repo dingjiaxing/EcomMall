@@ -1,10 +1,10 @@
-package com.jackting.module_user.ui.acccount.about_us;
+package com.jackting.module_user.ui.account.register;
 
 import com.jackting.common.base.interfaces.IModel;
 import com.jackting.common.base.interfaces.IView;
 
 
-public interface AboutUsContract {
+public interface RegisterContract {
 
     interface View extends IView{
         void loginSuccess();

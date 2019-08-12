@@ -1,4 +1,4 @@
-package com.jackting.module_user.ui.acccount.about_us;
+package com.jackting.module_user.ui.account.about_us;
 
 import android.os.Bundle;
 import android.util.Log;

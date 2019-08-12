@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/res_ThemeYh"
+        android:theme="@style/res_Theme"
         android:name=".AppApplication"
         >
         <!--tools:replace="android:appComponentFactory"-->
@@ -35,10 +35,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.jackting.module_user.ui.acccount.login.LoginActivity"
+        <activity android:name="com.jackting.module_user.ui.account.login.LoginActivity"
             />
-        <activity android:name="com.jackting.module_user.ui.acccount.about_us.AboutUsActivity"/>
-        <activity android:name="com.jackting.module_user.ui.acccount.register.RegisterActivity"/>
+        <activity android:name="com.jackting.module_user.ui.account.about_us.AboutUsActivity"/>
+        <activity android:name="com.jackting.module_user.ui.account.register.RegisterActivity"/>
 
         <activity android:name="com.jackting.module_goods.ui.search.SearchActivity"/>
         <activity android:name="com.jackting.module_goods.ui.goods.GoodsDetailActivity"/>

@@ -1,8 +1,7 @@
-package com.jackting.module_user.ui.acccount.login;
+package com.jackting.module_user.ui.account.login;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -12,7 +11,6 @@ import com.jackting.common.util.ToastUtil;
 import com.jackting.lib_router.module.main.MainIntent;
 import com.jackting.lib_router.provider.IUserProvider;
 import com.jackting.lib_router.router.ModuleRouter;
-import com.jackting.lib_router.router.ServiceManager;
 import com.jackting.module_user.R;
 import com.jackting.module_user.R2;
 import com.jackting.module_user.di.component.DaggerUserComponent;

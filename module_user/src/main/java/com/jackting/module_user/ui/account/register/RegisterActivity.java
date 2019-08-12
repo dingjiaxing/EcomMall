@@ -1,4 +1,4 @@
-package com.jackting.module_user.ui.acccount.register;
+package com.jackting.module_user.ui.account.register;
 
 import android.os.Bundle;
 import android.util.Log;

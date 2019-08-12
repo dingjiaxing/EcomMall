@@ -1,4 +1,4 @@
-package com.jackting.module_user.ui.acccount.login;
+package com.jackting.module_user.ui.account.login;
 
 import com.jackting.common.base.BaseModel;
 import com.jackting.common_http.result.HttpRespResult;
@@ -8,7 +8,6 @@ import com.jackting.module_user.data.UserDataRepository;
 import javax.inject.Inject;
 
 import io.reactivex.Observable;
-import io.reactivex.Observer;
 
 public class LoginModel extends BaseModel implements LoginContract.Model{
 

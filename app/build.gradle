@@ -42,23 +42,25 @@ dependencies {
 //    testImplementation 'junit:junit:4.12'
 //    androidTestImplementation 'com.android.support.test:runner:1.0.2'
 //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    if (!isModule.toBoolean()) {
+        //通用组件层
+        api project(path: ':common')
+        implementation project(path: ':common_http')
 
-    //通用组件层
-    api project(path: ':common')
-    implementation project(path: ':common_http')
+        //业务组件层
+        api project(path: ':lib')
+        implementation project(path: ':lib_router')
+        implementation project(path: ':lib_webview')
+        implementation project(path: ':lib_push')
 
-    //业务组件层
-    api project(path: ':lib')
-    implementation project(path: ':lib_router')
-    implementation project(path: ':lib_webview')
-    implementation project(path: ':lib_push')
+        //业务模块层
+        implementation project(path: ':module_order')
+        implementation project(path: ':module_goods')
+        implementation project(path: ':module_msg')
+        implementation project(path: ':module_main')
+        implementation project(path: ":module_user")
+        implementation project(path: ":module_community")
+    }
 
-    //业务模块层
-    implementation project(path: ':module_order')
-    implementation project(path: ':module_goods')
-    implementation project(path: ':module_msg')
-    implementation project(path: ':module_main')
-    implementation project(path: ":module_user")
-    implementation project(path: ":module_community")
 
 }

@@ -1,14 +1,14 @@
-package com.jackting.module_user.ui.acccount.about_us;
+package com.jackting.module_user.ui.account.register;
 
 import com.jackting.common.base.BaseModel;
 
 import javax.inject.Inject;
 
 
-public class AboutUsModel extends BaseModel implements AboutUsContract.Model{
+public class RegisterModel extends BaseModel implements RegisterContract.Model{
 
     @Inject
-    public AboutUsModel() {
+    public RegisterModel() {
 
     }
 
