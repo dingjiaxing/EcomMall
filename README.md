@@ -22,6 +22,12 @@
 * module_msg: 消息模块，包括客服消息等；
 4. APP壳，是app的入口模块，包括manifest配置、加载各个模块、打包配置等，基于应用安全考虑，通过调用C层的加密方法将业务模块加密
 
+## 待完成
+1. 独立进程webview；
+2. im;
+3. UI: 购物车、首页；
+4. lib_push;
+
 ## 参考
 1. [知乎 Android 客户端组件化实践](https://zhuanlan.zhihu.com/p/45374964)
 2. [浅谈项目架构重构之路——组件化与MVP](https://www.jianshu.com/p/1a1ddecb576d)
