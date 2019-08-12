@@ -43,15 +43,17 @@ dependencies {
 //    androidTestImplementation 'com.android.support.test:runner:1.0.2'
 //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
+    //通用组件层
+    api project(path: ':common')
+    implementation project(path: ':common_http')
 
-    implementation project(path: ':common')
-
+    //业务组件层
+    api project(path: ':lib')
     implementation project(path: ':lib_router')
     implementation project(path: ':lib_webview')
-    implementation project(path: ':lib_res')
     implementation project(path: ':lib_push')
-    implementation project(path: ':lib_http')
 
+    //业务模块层
     implementation project(path: ':module_order')
     implementation project(path: ':module_goods')
     implementation project(path: ':module_msg')
@@ -59,5 +61,4 @@ dependencies {
     implementation project(path: ":module_user")
     implementation project(path: ":module_community")
 
-//    implementation project(path:":common")
 }
