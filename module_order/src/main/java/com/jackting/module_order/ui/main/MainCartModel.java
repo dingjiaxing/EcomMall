@@ -4,8 +4,8 @@ import com.jackting.common.base.BaseModel;
 
 import javax.inject.Inject;
 
-public class MainOrderModel extends BaseModel implements MainOrderContract.Model {
+public class MainCartModel extends BaseModel implements MainCartContract.Model {
     @Inject
-    public MainOrderModel() {
+    public MainCartModel() {
     }
 }

@@ -4,10 +4,10 @@ import com.jackting.common.base.BasePresenter;
 
 import javax.inject.Inject;
 
-public class MainOrderPresenter extends BasePresenter<MainOrderContract.Model, MainOrderContract.View> {
+public class MainCartPresenter extends BasePresenter<MainCartContract.Model, MainCartContract.View> {
 
     @Inject
-    public MainOrderPresenter(MainOrderModel model) {
+    public MainCartPresenter(MainOrderModel model) {
         super(model);
     }
 

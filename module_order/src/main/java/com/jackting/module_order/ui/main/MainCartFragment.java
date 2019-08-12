@@ -4,12 +4,11 @@ import android.os.Bundle;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.jackting.common.base.BaseFragment;
-import com.jackting.lib_router.provider.ICommunityProvider;
 import com.jackting.lib_router.provider.IOrderProvider;
 import com.jackting.module_order.R;
 
 @Route(path = IOrderProvider.ORDER_CART_FRAGMENT)
-public class MainOrderFragment extends BaseFragment<MainOrderPresenter> implements MainOrderContract.View {
+public class MainCartFragment extends BaseFragment<MainCartPresenter> implements MainCartContract.View {
 
 
 //    @BindView(R2.id.btn_login)
@@ -19,10 +18,10 @@ public class MainOrderFragment extends BaseFragment<MainOrderPresenter> implemen
 //    public MainOrderFragment() {
 //    }
 
-    public static MainOrderFragment newInstance() {
+    public static MainCartFragment newInstance() {
         Bundle args = new Bundle();
 
-        MainOrderFragment fragment = new MainOrderFragment();
+        MainCartFragment fragment = new MainCartFragment();
         fragment.setArguments(args);
         return fragment;
     }
