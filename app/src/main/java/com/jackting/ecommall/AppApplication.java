@@ -12,26 +12,12 @@ import javax.inject.Inject;
 
 public class AppApplication extends CommonApplication  {
 
-    @Inject
-//    DispatchingAndroidInjector<Activity> dispatchingAndroidInjector;
 
     @Override
     public void onCreate() {
         setIsDebug(BuildConfig.DEBUG);
         super.onCreate();
-//        initDagger();
-//        new CommonApplication().onCreate(this);
-//        new UserApplication().onCreate(this);
     }
 
-//    void initDagger(){
-//        DaggerAppComponent.builder()
-//                .appModule(new AppModule(this))
-//                .build();
-//    }
-//
-//    @Override
-//    public AndroidInjector<Activity> activityInjector() {
-//        return dispatchingAndroidInjector;
-//    }
+
 }
