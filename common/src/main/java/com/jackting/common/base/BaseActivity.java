@@ -24,6 +24,7 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
 
     protected final String TAG = this.getClass().getSimpleName();
     private Unbinder mUnbinder;
+
     @Inject
     @Nullable
     protected P presenter;
@@ -57,7 +58,7 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
         if(useEventBus()){
             EventBus.getDefault().unregister(this);
         }
-        if(mUnbinder != Unbinder.EMPTY){
+        if(mUnbinder!=null && mUnbinder != Unbinder.EMPTY){
             mUnbinder.unbind();
         }
         mUnbinder = null;

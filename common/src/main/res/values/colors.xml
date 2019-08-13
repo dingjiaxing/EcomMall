@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- 主题用颜色 -->
+    <color name="colorPrimary">#e11437</color>
+    <color name="colorPrimaryDark">#e11437</color>
+    <color name="colorAccent">#e11437</color>
     <!-- 常用颜色 -->
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>

@@ -42,7 +42,7 @@ public class MainActivity extends BaseActivity<MainPresenter> {
     FragmentTransaction ft;
     @Inject
     MainHomeFragment homeFragment;
-//    @Inject
+
     Fragment categoryFragment;
     Fragment communityFragment;
     Fragment cartFragment;

@@ -12,5 +12,5 @@ public interface IFragment {
 
     void init(Bundle savedInstanceState);
 
-
+    void daggerInit();
 }

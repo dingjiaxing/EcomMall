@@ -3,6 +3,9 @@
 网络通信使用了okhttp+retrofit+rxJava2，配置存储采用MMKV，数据传递采用EventBus，图片加载使用glide，
 可用于android中级及以上学习此架构、android团队直接参考此架构进行开发。
 2. [架构设计文档](https://blog.csdn.net/qq_23081779/article/details/99286345)
+3. 项目特点
+* 组件化：层次清晰，模块间耦合度较低，易于管理的维护
+* MVP+dagger：
 
 ### 架构介绍
 #### 架构图
@@ -35,3 +38,7 @@
 4. [WanAndroid架构源码](https://github.com/senonwx/WanAndroid)
 5. [仿京东app](https://github.com/liu-xiao-dong/JD-Test)
 6. [MVPArms](https://github.com/JessYanCoding/MVPArms)
+7. [Android WebView独立进程解决方案](https://www.jianshu.com/p/b66c225c19e2) [github地址](https://github.com/xudjx/webprogress)
+
+## 联系我们
+* 邮箱：itdjx@qq.com

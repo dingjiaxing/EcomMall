@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
+import com.jackting.common.CommonApplication;
 import com.jackting.common.base.BaseFragment;
 import com.jackting.lib_router.provider.IGoodsProvider;
 import com.jackting.lib_router.provider.IMainProvider;
@@ -21,6 +22,7 @@ import com.jackting.module_goods.adapter.delegate.CategoryContentDelegate;
 import com.jackting.module_goods.adapter.delegate.CategoryTitleDelegate;
 import com.jackting.module_goods.bean.entity.CategoryEntity;
 import com.jackting.module_goods.data.test.TestDataEngine;
+import com.jackting.module_goods.di.DaggerGoodsComponent;
 import com.zhy.adapter.recyclerview.MultiItemTypeAdapter;
 
 import java.util.ArrayList;
@@ -69,6 +71,14 @@ public class MainCategoryFragment extends BaseFragment<MainCategoryPresenter> im
         initRv();
         initTestData();
 
+    }
+
+    @Override
+    public void daggerInit() {
+        DaggerGoodsComponent.builder()
+                .appComponent(CommonApplication.getAppComponent())
+                .build()
+                .inject(this);
     }
 
     void initRv(){

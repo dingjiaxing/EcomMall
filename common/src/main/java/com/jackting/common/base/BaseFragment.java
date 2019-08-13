@@ -62,6 +62,7 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         rootView = view;
+        daggerInit();
         if(presenter!=null){
             presenter.takeView(this);
         }
@@ -83,7 +84,7 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
         if(useEventBus()){
             EventBus.getDefault().unregister(this);
         }
-        if(mUnbinder != Unbinder.EMPTY){
+        if(mUnbinder!=null && mUnbinder != Unbinder.EMPTY){
             mUnbinder.unbind();
         }
         if(presenter != null){

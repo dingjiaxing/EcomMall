@@ -46,6 +46,7 @@ import com.jackting.module_order.bean.entity.CartGoodEntity;
 import com.jackting.module_order.bean.entity.CartShopEntity;
 import com.jackting.module_order.bean.vo.GetCartListVO;
 import com.jackting.module_order.data.config.OrderConfigKeys;
+import com.jackting.module_order.di.DaggerOrderComponent;
 import com.jackting.module_order.ui.order_ensure.OrderEnsureActivity;
 
 import java.util.ArrayList;
@@ -54,6 +55,8 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+
+import static com.jackting.common.CommonApplication.getAppComponent;
 
 @Route(path = IOrderProvider.ORDER_CART_FRAGMENT)
 public class MainCartFragment extends BaseFragment<MainCartPresenter> implements MainCartContract.View {
@@ -137,7 +140,7 @@ public class MainCartFragment extends BaseFragment<MainCartPresenter> implements
             //已登录
             rlFragmentCartLogin.setVisibility(View.VISIBLE);
             llFragmentCartUnlogin.setVisibility(View.GONE);
-//            presenter.getCartList();
+            presenter.getCartList();
         }
     }
 
@@ -570,6 +573,13 @@ public class MainCartFragment extends BaseFragment<MainCartPresenter> implements
 //        Logger.json(JSON.toJSONString(cartExpandableRVAdapter.getData()));
 //        cartExpandableRVAdapter.getItem(position)
 
+    }
+
+    public void daggerInit() {
+        DaggerOrderComponent.builder()
+                .appComponent(getAppComponent())
+                .build()
+                .inject(this);
     }
 
 }

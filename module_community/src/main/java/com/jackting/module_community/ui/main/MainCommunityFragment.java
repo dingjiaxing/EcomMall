@@ -5,11 +5,14 @@ import android.view.View;
 import android.widget.Button;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.jackting.common.CommonApplication;
 import com.jackting.common.base.BaseFragment;
 import com.jackting.lib_router.provider.ICommunityProvider;
 import com.jackting.lib_router.router.ServiceManager;
 import com.jackting.module_community.R;
 import com.jackting.module_community.R2;
+import com.jackting.module_community.di.CommunityComponent;
+import com.jackting.module_community.di.DaggerCommunityComponent;
 
 import javax.inject.Inject;
 
@@ -50,6 +53,14 @@ public class MainCommunityFragment extends BaseFragment<MainCommunityPresenter> 
 //                ServiceManager.getInstance().getUserProvider().startLoginActivity();
 //            }
 //        });
+    }
+
+    @Override
+    public void daggerInit() {
+        DaggerCommunityComponent.builder()
+                .appComponent(CommonApplication.getAppComponent())
+                .build()
+                .inject(this);
     }
 
     void initRv(){

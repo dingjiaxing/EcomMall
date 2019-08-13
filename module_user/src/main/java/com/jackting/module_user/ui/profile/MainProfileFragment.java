@@ -5,12 +5,14 @@ import android.view.View;
 import android.widget.Button;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.jackting.common.CommonApplication;
 import com.jackting.common.base.BaseFragment;
 import com.jackting.lib_router.module.user.UserIntent;
 import com.jackting.lib_router.provider.IUserProvider;
 import com.jackting.lib_router.router.ServiceManager;
 import com.jackting.module_user.R;
 import com.jackting.module_user.R2;
+import com.jackting.module_user.di.component.DaggerUserComponent;
 
 import javax.inject.Inject;
 
@@ -25,8 +27,8 @@ public class MainProfileFragment extends BaseFragment<MainProfilePresenter> impl
 
 //    HomeArticleAdapter adapter;
 //    List<Article> articleList=new ArrayList<>();
-    @BindView(R2.id.btn_login)
-    Button btnLogin;
+//    @BindView(R2.id.btn_login)
+//    Button btnLogin;
 
     @Inject
     public MainProfileFragment() {
@@ -59,6 +61,14 @@ public class MainProfileFragment extends BaseFragment<MainProfilePresenter> impl
 //        });
     }
 
+    @Override
+    public void daggerInit() {
+        DaggerUserComponent.builder()
+                .appComponent(CommonApplication.getAppComponent())
+                .build()
+                .inject(this);
+    }
+
     void initRv(){
 //        adapter=new HomeArticleAdapter(articleList);
 //        recyclerView.setAdapter(adapter);
@@ -82,11 +92,11 @@ public class MainProfileFragment extends BaseFragment<MainProfilePresenter> impl
 
     }
 
-    @OnClick({R2.id.btn_login})
-    void doClick(View view){
-        if(view.getId()==R.id.btn_login){
-            UserIntent.startLoginActivity();
-//            ARouter.getInstance().build(IUserProvider.USER_PROFILE_LOGIN_ACTIVITY).navigation();
-        }
-    }
+//    @OnClick({R2.id.btn_login})
+//    void doClick(View view){
+//        if(view.getId()==R.id.btn_login){
+//            UserIntent.startLoginActivity();
+////            ARouter.getInstance().build(IUserProvider.USER_PROFILE_LOGIN_ACTIVITY).navigation();
+//        }
+//    }
 }

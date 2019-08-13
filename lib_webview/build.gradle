@@ -24,6 +24,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 
 }
 
@@ -36,5 +39,8 @@ dependencies {
 //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     api project(":common")
+    api project(":lib_router")
 
+
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.arouterCompilerVersion"
 }

@@ -8,6 +8,7 @@ import com.jackting.module_user.ui.account.about_us.AboutUsActivity;
 import com.jackting.module_user.ui.account.login.LoginActivity;
 import com.jackting.module_user.ui.account.login.LoginContract;
 import com.jackting.module_user.ui.account.register.RegisterActivity;
+import com.jackting.module_user.ui.profile.MainProfileFragment;
 
 import dagger.BindsInstance;
 import dagger.Component;
@@ -18,6 +19,8 @@ public interface UserComponent {
     void inject(LoginActivity activity);
     void inject(AboutUsActivity activity);
     void inject(RegisterActivity activity);
+
+    void inject(MainProfileFragment profileFragment);
 
 
 //    @Component.Builder

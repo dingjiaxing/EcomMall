@@ -8,20 +8,24 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.jackting.common.CommonApplication;
 import com.jackting.common.base.BaseFragment;
 import com.jackting.common.data.img.ImageLoader;
 import com.jackting.lib_router.provider.IGoodsProvider;
 import com.jackting.lib_router.provider.IMainProvider;
 import com.jackting.lib_router.provider.IMsgProvider;
 import com.jackting.lib_router.router.ModuleRouter;
+import com.jackting.lib_webview.ui.WebActivity;
 import com.jackting.module_main.R;
 import com.jackting.module_main.R2;
+import com.jackting.module_main.di.DaggerMainComponent;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
+import com.youth.banner.listener.OnBannerListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,6 +69,14 @@ public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements
         initRefreshLoadMore();
     }
 
+    @Override
+    public void daggerInit() {
+        DaggerMainComponent.builder()
+                .appComponent(CommonApplication.getAppComponent())
+                .build()
+                .inject(this);
+    }
+
     void initBanner(){
         banner.setImageLoader(new com.youth.banner.loader.ImageLoader() {
             @Override
@@ -89,6 +101,14 @@ public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements
         banner.setIndicatorGravity(BannerConfig.CENTER);
 
         banner.start();
+
+        banner.setOnBannerListener(new OnBannerListener() {
+            @Override
+            public void OnBannerClick(int position) {
+//                ModuleRouter.newInstance("/web/activity").navigation();
+                WebActivity.startCommonWeb(getContext(),"web","https://www.baidu.com/");
+            }
+        });
     }
 
     void initTestData(){
