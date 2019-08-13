@@ -32,7 +32,7 @@ public class CategoryContentDelegate implements ItemViewDelegate<CategoryEntity>
 
     @Override
     public void convert(ViewHolder holder, CategoryEntity item, int position) {
-        ImageLoader.with(this.mActivity)
+        ImageLoader.with(mActivity)
                 .load(item.typeImg)
                 .into((ImageView) holder.getView(R.id.iv_goods_category_right_content));
         holder.setText(R.id.tv_goods_category_right_content,

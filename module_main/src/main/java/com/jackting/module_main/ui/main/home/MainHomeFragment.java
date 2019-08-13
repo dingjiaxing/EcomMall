@@ -106,7 +106,8 @@ public class MainHomeFragment extends BaseFragment<MainHomePresenter> implements
             @Override
             public void OnBannerClick(int position) {
 //                ModuleRouter.newInstance("/web/activity").navigation();
-                WebActivity.startCommonWeb(getContext(),"web","https://www.baidu.com/");
+                // https://m.jd.com/
+                WebActivity.startCommonWeb(getContext(),"web","https://m.jd.com/");
             }
         });
     }

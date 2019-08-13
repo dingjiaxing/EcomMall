@@ -126,7 +126,7 @@
                 android:layout_marginLeft="17.5dp"
                 android:background="@null"
                 android:gravity="center_vertical"
-                android:text="搜索商品，发现更多好物"
+                android:text="寻找宝贝"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
 
